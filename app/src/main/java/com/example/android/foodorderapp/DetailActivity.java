@@ -43,9 +43,9 @@ public class DetailActivity extends AppCompatActivity {
                         FoodName);
 
                 if(isInserted){
-                    Toast.makeText(DetailActivity.this, "inserted", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DetailActivity.this, getString(R.string.toast_msg_inserted), Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(DetailActivity.this, "failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DetailActivity.this, getString(R.string.toast_msg_failed), Toast.LENGTH_SHORT).show();
                 }
 
                 binding.customerName.setText("");
